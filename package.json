@@ -7,7 +7,6 @@
   "scripts": {
     "prebuild": "npx prisma generate",
     "build": "tsc",
-    "prebuild": "npm run db:deploy && npx prisma generate",
     "migrate": "npm run db:deploy && npx prisma generate",
     "build": "tsc",
     "start": "tsnd -r tsconfig-paths/register --files --transpile-only ./src/main.ts",
