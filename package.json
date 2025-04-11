@@ -5,6 +5,7 @@
   "main": "./dist/main.js",
   "type": "commonjs",
   "scripts": {
+    "migrate": "npm run db:deploy && npx prisma generate",
     "build": "tsc",
     "start": "tsnd -r tsconfig-paths/register --files --transpile-only ./src/main.ts",
     "start:prod": "npm run build && node dist/main",
